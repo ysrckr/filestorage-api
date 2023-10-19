@@ -1,10 +1,9 @@
 package main
 
-import "github.com/kataras/iris/v12"
+import "github.com/ysrckr/filestorage/api/config"
+
+var PORT = "8080"
 
 func main() {
-	app := iris.New()
-  app.Use(iris.Compression)
-
-	app.Listen(":8080")
+	config.Config.StartServer(PORT)
 }
