@@ -29,19 +29,11 @@ func initEnv(envFile string, envs *map[string]string) {
 
 }
 
-
-
-
-
-
 func GetEnv(key string) string {
 	if len(envs) == 0 {
 		initEnv("dev", &envs)
 	}
 	return envs[key]
 }
-
-
-
 
 var PORT = GetEnv("PORT")
