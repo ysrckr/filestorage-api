@@ -3,6 +3,7 @@ module github.com/ysrckr/filestorage/api
 go 1.21
 
 require (
+	github.com/iris-contrib/middleware/cors v0.0.0-20231105204038-60b21ca77167
 	github.com/joho/godotenv v1.5.1
 	github.com/kataras/iris/v12 v12.2.8
 )
